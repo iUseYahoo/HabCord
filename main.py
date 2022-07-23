@@ -21,7 +21,7 @@ def sendmsg(msg):
 async def on_ready():
   print("\n== BOT IS ONLINE==\n")
   
-@client.command
+@client.command()
 async def msg(ctx, *, msg):
   sendmsg(msg)
   await ctx.reply(f"User: <@{ctx.author.id}>\nMessage: `{msg}`")
